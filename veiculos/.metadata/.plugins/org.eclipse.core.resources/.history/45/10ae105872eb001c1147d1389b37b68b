@@ -1,0 +1,41 @@
+package application;
+
+public class Automovel extends Veiculo{
+	
+	private int diametroRoda;	
+
+	public Automovel() {
+		super();
+	}	
+
+	public Automovel(String nomeFabricante, String paisOrigem, String nome, Fabricante fabricante, int anoFabricacao,
+			int capacidade, int diametroRoda) {
+		super(nomeFabricante, paisOrigem, nome, fabricante, anoFabricacao, capacidade);
+		this.diametroRoda = diametroRoda;
+	}
+
+	public int getDiametroRoda() {
+		return diametroRoda;
+	}
+
+	public void setDiametroRoda(int diametroRoda) {
+		this.diametroRoda = diametroRoda;
+	}
+	
+	@Override
+	public void acelerar() {
+		System.out.println("O automóvel acelerou.");
+	}
+	
+	@Override
+	public void mostrarDetalhes() {
+		System.out.println("O automóvel" + super.getNome()
+		+ ", ano "+ super.anoFabricacao 
+		+ ", produzido pela " + super.getNomeFabricante());
+	}
+	
+	public void abrirPortaMalas() {
+		System.out.println("O porta malas do carro foi aberto.");
+	}
+
+}

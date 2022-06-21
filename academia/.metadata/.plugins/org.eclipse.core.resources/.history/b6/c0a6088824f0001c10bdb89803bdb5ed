@@ -1,0 +1,64 @@
+package application;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+public class Aluno extends Pessoa {
+
+	private int matricula;
+	private LocalDate dataMatricula;
+	private double altura;
+	private double peso;
+	private ArrayList<Turma> turma;
+
+	public Aluno(String nome, LocalDate dataNascimento, ArrayList<Telefone> telefones, ArrayList<Endereco> enderecos,
+			int matricula, LocalDate dataMatricula, double altura, double peso, ArrayList<Turma> turma) {
+		super(nome, dataNascimento, telefones, enderecos);
+		this.matricula = matricula;
+		this.dataMatricula = dataMatricula;
+		this.altura = altura;
+		this.peso = peso;
+		this.turma = turma;
+	}
+
+	public int getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+
+	public LocalDate getDataMatricula() {
+		return dataMatricula;
+	}
+
+	public void setDataMatricula(LocalDate dataMatricula) {
+		this.dataMatricula = dataMatricula;
+	}
+
+	public double getAltura() {
+		return altura;
+	}
+
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	public ArrayList<Turma> getTurma() {
+		return turma;
+	}
+
+	public void setTurma(ArrayList<Turma> turma) {
+		this.turma = turma;
+	}
+
+}

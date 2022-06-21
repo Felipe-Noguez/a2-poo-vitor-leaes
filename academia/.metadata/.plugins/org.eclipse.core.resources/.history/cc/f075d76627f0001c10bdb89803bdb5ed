@@ -1,0 +1,46 @@
+package application;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		Aluno aluno1 = new Aluno();
+		
+		int h = 10;
+		int m = 23;
+		int s = 55;
+		int ms = 1234;
+		
+		LocalTime hora = LocalTime.of(11, 1, 22, 122);
+		LocalDate data = LocalDate.of(2022, 06, 10);
+		
+		System.out.println("Cadastrando Aluno");
+		System.out.print("Digite o nome do aluno: ");
+		aluno1.setNome(input.nextLine());
+		
+		System.out.print("Data de nascimento: ");
+		aluno1.setDataNascimento(input.nextLine());
+		
+		System.out.println("Data da matricula");
+		aluno1.setDataMatricula(data.now());
+		
+		//Aluno aluno1 = new Aluno("Felipe Noguez", data, null, , 0, null, 0, 0, null);
+		//new Endereco("Rua Manoel Elias", 874, "Campos FAPA", "Rubem Berta", "Porto Alegre", "RS")
+		//(String nome, LocalDate dataNascimento, ArrayList<Telefone> telefones, ArrayList<Endereco> enderecos, int matricula, LocalDate dataMatricula, double altura, double peso, ArrayList<Turma> turma) 
+		
+		System.out.println(hora);
+		System.out.println(aluno1.getNome());
+		System.out.println("Data da matricula: " + aluno1.getDataMatricula());
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package application;
+
+import java.time.LocalDate;
+
+public class Aluno extends Pessoa{
+	
+	private int matricula;
+	private LocalDate dataMatricula;
+	private 
+
+}

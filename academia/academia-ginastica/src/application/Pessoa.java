@@ -1,0 +1,55 @@
+package application;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+public abstract class Pessoa {
+
+	private String nome;
+	private LocalDate dataNascimento;
+	private ArrayList<Telefone> telefones;
+	private ArrayList<Endereco> enderecos;
+
+	public Pessoa() {
+	}
+
+	public Pessoa(String nome, LocalDate dataNascimento, ArrayList<Telefone> telefones, ArrayList<Endereco> enderecos) {
+		this.nome = nome;
+		this.dataNascimento = dataNascimento;
+		this.telefones = telefones;
+		this.enderecos = enderecos;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public LocalDate getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(LocalDate dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public ArrayList<Telefone> getTelefones() {
+		return telefones;
+	}
+
+	public void setTelefones(ArrayList<Telefone> telefones) {
+		this.telefones = telefones;
+	}
+
+	public ArrayList<Endereco> getEnderecos() {
+		return enderecos;
+	}
+
+	public void setEnderecos(ArrayList<Endereco> enderecos) {
+		this.enderecos = enderecos;
+	}
+
+}

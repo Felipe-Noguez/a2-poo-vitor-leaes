@@ -1,0 +1,17 @@
+package application;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class Turma {
+	
+	private int numAlunos;
+	private LocalTime hora = LocalTime.of(int hour, int minute);
+	private LocalTime duracao;
+	private LocalDate dataInicial;
+	private LocalDate dataFinal;
+	private String tipoAtividade;
+	
+	
+
+}

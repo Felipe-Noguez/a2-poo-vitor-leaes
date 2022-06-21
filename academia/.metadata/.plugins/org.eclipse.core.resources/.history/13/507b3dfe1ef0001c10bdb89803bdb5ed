@@ -1,0 +1,30 @@
+package application;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		int h = 10;
+		int m = 23;
+		int s = 55;
+		int ms = 1234;
+		
+		LocalTime hora = LocalTime.of(11, 1, 22, 122);
+		LocalDate data = LocalDate
+		
+		
+		//Aluno aluno1 = new Aluno("Felipe Noguez", , null, null, 0, null, 0, 0, null);
+		
+		
+		System.out.println(hora);
+		
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,73 @@
+package application;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class Turma {
+	
+	private int numAlunos;
+	private LocalTime hora;
+	private LocalTime duracao;
+	private LocalDate dataInicial;
+	private LocalDate dataFinal;
+	private String tipoAtividade;
+	
+	public Turma(int numAlunos, LocalTime hora, LocalTime duracao, LocalDate dataInicial, LocalDate dataFinal,
+			String tipoAtividade) {
+		this.numAlunos = numAlunos;
+		this.hora = hora;
+		this.duracao = duracao;
+		this.dataInicial = dataInicial;
+		this.dataFinal = dataFinal;
+		this.tipoAtividade = tipoAtividade;
+	}
+
+	public int getNumAlunos() {
+		return numAlunos;
+	}
+
+	public void setNumAlunos(int numAlunos) {
+		this.numAlunos = numAlunos;
+	}
+
+	public LocalTime getHora() {
+		return hora;
+	}
+
+	public void setHora(LocalTime hora) {
+		this.hora = hora;
+	}
+
+	public LocalTime getDuracao() {
+		return duracao;
+	}
+
+	public void setDuracao(LocalTime duracao) {
+		this.duracao = duracao;
+	}
+
+	public LocalDate getDataInicial() {
+		return dataInicial;
+	}
+
+	public void setDataInicial(LocalDate dataInicial) {
+		this.dataInicial = dataInicial;
+	}
+
+	public LocalDate getDataFinal() {
+		return dataFinal;
+	}
+
+	public void setDataFinal(LocalDate dataFinal) {
+		this.dataFinal = dataFinal;
+	}
+
+	public String getTipoAtividade() {
+		return tipoAtividade;
+	}
+
+	public void setTipoAtividade(String tipoAtividade) {
+		this.tipoAtividade = tipoAtividade;
+	}	
+
+}

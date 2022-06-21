@@ -1,0 +1,12 @@
+package application;
+
+import java.time.LocalDate;
+
+public class Instrutor {
+	
+	private String nome;
+	private int rg;
+	private LocalDate dataNascimento;
+	
+
+}

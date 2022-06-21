@@ -1,0 +1,12 @@
+package application;
+
+import java.time.LocalDate;
+
+public class Instrutor extends Pessoa{
+	
+	private int rg;
+	private LocalDate dataNascimento;
+	private
+	
+
+}

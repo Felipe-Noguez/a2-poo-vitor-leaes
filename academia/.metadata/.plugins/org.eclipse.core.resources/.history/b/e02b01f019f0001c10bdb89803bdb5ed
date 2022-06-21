@@ -1,0 +1,32 @@
+package application;
+
+import java.time.LocalDate;
+
+public class Instrutor extends Pessoa{
+	
+	private int rg;
+	private LocalDate dataNascimento;
+	
+	public Instrutor(int rg, LocalDate dataNascimento) {
+		super();
+		this.rg = rg;
+		this.dataNascimento = dataNascimento;
+	}
+
+	public int getRg() {
+		return rg;
+	}
+
+	public void setRg(int rg) {
+		this.rg = rg;
+	}
+
+	public LocalDate getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(LocalDate dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}	
+
+}

@@ -1,0 +1,80 @@
+package application;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		ArrayList phones = new ArrayList<>();
+		ArrayList end = new ArrayList<>();
+
+		Aluno aluno1 = new Aluno();
+		Instrutor instrutor1 = new Instrutor();
+
+		int h = 10;
+		int m = 23;
+		int s = 55;
+		int ms = 1234;
+
+		LocalTime hora = LocalTime.of(11, 1, 22, 122);
+
+		System.out.println("Cadastrando Aluno");
+		System.out.print("Digite o nome do aluno: ");
+		aluno1.setNome(input.nextLine());
+
+		System.out.print("Data de nascimento do aluno: ");
+		int dia = input.nextInt();
+		int mes = input.nextInt();
+		int ano = input.nextInt();
+		LocalDate data = LocalDate.of(ano, mes, dia);
+
+		aluno1.setDataNascimento(data);
+
+		System.out.print("Telefone do aluno: ");
+		phones.add(input.nextInt());
+		System.out.print("Telefone do aluno: ");
+		phones.add(input.nextInt());
+		aluno1.setTelefones(phones);
+
+		System.out.print("Matricula: ");
+		aluno1.setMatricula(000032);
+
+		// Capturando a data atual no momento da matricula
+		aluno1.setDataMatricula(data.now());
+
+		System.out.print("Digite a altura do aluno: ");
+		aluno1.setAltura(input.nextDouble());
+
+		System.out.print("Digite o peso do aluno: ");
+		aluno1.setPeso(input.nextDouble());
+
+		// CADASTRO DO INSTRUTOR
+		System.out.println("Cadastro do Instrutor");
+		System.out.print("Nome do instrutor");
+		instrutor1.setNome(input.nextLine());
+		
+		System.out.print("RG do instrutor");
+		instrutor1.setRg(input.nextInt());
+
+		System.out.println("DADOS DO ALUNO");
+		System.out.println(aluno1.getNome());
+		System.out.println(data);
+		System.out.println(hora);
+		System.out.println("Data da matricula: " + aluno1.getDataMatricula());
+		System.out.println("Telefone (s): " + aluno1.getTelefones());
+		System.out.println("Matricula: " + aluno1.getMatricula());
+		System.out.println("Altura: " + aluno1.getAltura());
+		
+		System.out.println("DADOS DO INSTRUTOR");
+		System.out.println("Instrutor: " + instrutor1.getNome());
+		System.out.println("RG do instrutor: " + instrutor1.getRg());
+
+		
+	}
+
+}
