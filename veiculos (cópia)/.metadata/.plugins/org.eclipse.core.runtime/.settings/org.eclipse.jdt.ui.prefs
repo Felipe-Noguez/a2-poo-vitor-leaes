@@ -1,0 +1,8 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="application.Veiculo"><rhs name\="application.Automovel"/><rhs name\="application.Aviao"/><rhs name\="application.Barco"/></lhs><lhs name\="application.Fabricante"><rhs name\="application.Automovel"/><rhs name\="application.Aviao"/><rhs name\="application.Barco"/></lhs><lhs name\="application.Automovel"><rhs name\="application.Automovel"/></lhs><lhs name\="application.Aviao"><rhs name\="application.Aviao"/></lhs><lhs name\="application.Barco"><rhs name\="application.Barco"/></lhs></history>
+content_assist_number_of_computers=12
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=21
+spelling_locale_initialized=true
+typefilter_migrated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

@@ -1,0 +1,43 @@
+package application;
+
+public class Barco extends Veiculo{
+	
+	private int numVelas;
+
+	public Barco() {
+		super();
+	}
+
+	public Barco(String nome, String paisOrigem, String nome2, Fabricante fabricante, int anoFabricacao, int capacidade,
+			int numVelas) {
+		super(nome, paisOrigem, nome2, fabricante, anoFabricacao, capacidade);
+		this.numVelas = numVelas;
+	}
+
+	public int getNumVelas() {
+		return numVelas;
+	}
+
+	public void setNumVelas(int numVelas) {
+		this.numVelas = numVelas;
+	}
+	
+	@Override
+	public void acelerar() {
+		System.out.println("O barco acelerou.");
+	}
+	
+	@Override
+	public void mostrarDetalhes() {
+		
+	}
+	
+	public void icarVelas() {
+		
+	}
+	
+	public void recolherVelas() {
+		
+	}
+
+}
