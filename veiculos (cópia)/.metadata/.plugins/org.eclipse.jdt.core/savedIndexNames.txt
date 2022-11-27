@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+/media/felipe/Chilip & Jessie/PROGRAMACAO/Uniritter/CIÊNCIA DE DADOS 2021/2022 - 1/4 - PROGRAMAÇÃO ORIENTADA A OBJETOS/workspace/programacao-orientada-objeto/avaliacao-a2/veiculos/.metadata/.plugins/org.eclipse.jdt.core
-646308851.index
-3281556587.index
-1865797976.index
