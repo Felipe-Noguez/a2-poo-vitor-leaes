@@ -1,0 +1,9 @@
+@Override
+	public void acelerar() {
+		
+	}
+	
+	@Override
+	public void mostrarDetalhes() {
+		
+	}

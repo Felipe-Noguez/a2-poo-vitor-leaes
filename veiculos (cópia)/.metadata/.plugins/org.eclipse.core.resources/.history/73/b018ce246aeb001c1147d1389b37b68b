@@ -1,0 +1,30 @@
+package application;
+
+public class Automovel extends Veiculo{
+	
+	private int diametroRoda;	
+
+	public Automovel() {
+		super();
+	}
+	
+	public Automovel(String nome, String paisOrigem, String nome2, Fabricante fabricante, int anoFabricacao,
+			int capacidade, int diametroRoda) {
+		super(nome, paisOrigem, nome2, fabricante, anoFabricacao, capacidade);
+		this.diametroRoda = diametroRoda;
+	}
+
+	public int getDiametroRoda() {
+		return diametroRoda;
+	}
+
+	public void setDiametroRoda(int diametroRoda) {
+		this.diametroRoda = diametroRoda;
+	}
+	
+	@Override
+	public void acelerar() {
+		
+	}
+
+}

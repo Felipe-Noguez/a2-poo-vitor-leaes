@@ -1,0 +1,38 @@
+package application;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Automovel auto1 = new Automovel();
+		Aviao aviao1 = new Aviao();
+		
+		auto1.setNomeFabricante("Dodge");
+		auto1.setNome("RAM 2500");
+		auto1.setAnoFabricacao(2022);
+		auto1.setPaisOrigem("EUA");
+		auto1.setDiametroRoda(18);
+		auto1.setCapacidade(5);
+		
+		auto1.mostrarDetalhes();
+		auto1.acelerar();
+		auto1.abrirPortaMalas();
+		
+		aviao1.setNomeFabricante("Boeing");
+		aviao1.setNome("737");
+		aviao1.setAnoFabricacao(1990);
+		aviao1.setPaisOrigem("EUA");
+		aviao1.setNumTurbinas(24);
+		aviao1.setCapacidade(200);
+		
+		aviao1.mostrarDetalhes();
+		aviao1.decolar();
+		aviao1.pousar();
+		
+		
+		
+		
+
+	}
+
+}
